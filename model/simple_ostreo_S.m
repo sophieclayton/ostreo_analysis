@@ -11,6 +11,6 @@ load ../data/ostreo % load the ostreo clade abundance data
 
 kuro=find(lon>140 & z==0); % use only the data from the Kuroshio
 
-out = ostreo_model;
+[out, y] = ostreo_model;
 
 run('../figures/plot_ostreo_model.m')

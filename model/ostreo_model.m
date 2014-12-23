@@ -1,4 +1,4 @@
-function [output] = ostreo_model;
+function [output, y] = ostreo_model;
 
 % parameters for all experiments
 dy = 0.05;
@@ -23,8 +23,8 @@ OII_neg=zeros(length(y),length(tstep));
 OI_null(1,:)=5000;
 OII_null(end,:)=5000;
 
-OI_pos(1,:)=5000;
-OII_pos(end,:)=5000;
+OI_pos(1,:)=100;
+OII_pos(end,:)=100;
 
 OI_neg(1,:)=5000;
 OII_neg(end,:)=5000;
