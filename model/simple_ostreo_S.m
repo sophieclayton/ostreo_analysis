@@ -33,7 +33,7 @@ par = [
 
 [out] = ostreo_model(par);
 
-plot_ostreo_model
+run('../figures/plot_ostreo_model.m')
 
 
 
