@@ -29,9 +29,9 @@ m1=0.1/(60*60*24);
 %m1=0;
 m2=m1;
 
-par = [
+par = [];
 
-[out] = ostreo_model(par);
+out = ostreo_model(par);
 
 run('../figures/plot_ostreo_model.m')
 
