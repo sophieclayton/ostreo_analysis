@@ -6,7 +6,7 @@
 
 n=24;
 
-load ../ostreo %/data1/sclayton/kuroshio/genomics/ostreo
+load ostreo %/data1/sclayton/kuroshio/genomics/ostreo
 %load /data1/sclayton/kuroshio/cruise_data/nitrate
 
 kuro=find(lon>140 & z==0);
