@@ -1,2 +1,6 @@
 # ignore image files
 *.eps
+*.png
+
+# ignore checkpoints
+.ipynb_checkpoints
