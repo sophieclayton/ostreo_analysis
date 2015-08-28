@@ -2,7 +2,7 @@ function [output, y] = ostreo_model;
 
 % parameters for all experiments
 dy = 0.05;
-y = 33.2:dy:34.4; % m
+y = 33.2:dy:34.3; % m
 k = 5e-08; % diffusity coeff in salinity space, S2/s
 
 % time stepping
@@ -20,14 +20,14 @@ OI_neg=zeros(length(y),length(tstep));
 OII_neg=zeros(length(y),length(tstep));
 
 % initial conditions and boundary conditions
-OI_null(1,:)=5000;
-OII_null(end,:)=5000;
+OI_null(1,:)=1500;
+OII_null(end,:)=1500;
 
-OI_pos(1,:)=100;
-OII_pos(end,:)=100;
+OI_pos(1,:)=1500;
+OII_pos(end,:)=1500;
 
-OI_neg(1,:)=5000;
-OII_neg(end,:)=5000;
+OI_neg(1,:)=1500;
+OII_neg(end,:)=1500;
 
 % EXPERIMENT 1, unet = 0
 u1 = zeros(length(y));
@@ -47,7 +47,7 @@ end
 clear u1 u2 m1 m2
 
 % EXPERIMENT 2, unet > 0
-u1 = 0.9/(60*60*24).*ones(length(y));
+u1 = 0.7/(60*60*24).*ones(length(y));
 u2 = u1;
 
 m1 =0.1/(60*60*24);
