@@ -47,7 +47,7 @@ elseif ftype == 3,
     plot(S(kuro),O(kuro,1),'xb',S(kuro),O(kuro,2),'xr','LineWidth',2,'MarkerSize',12); % plot observations
     
     ylabel('Abundance (gene copies ml^{-1})','FontSize',n,'FontName','Helvetica');
-    xlabel('Salinity','FontSize',n);set(gca,'FontSize',n)
+    xlabel('Salinity (psu)','FontSize',n);set(gca,'FontSize',n)
     set(gca,'FontSize',n,'FontName','Helvetica','XTick',33.2:0.2:34.4, 'LineWidth',2);
     axis([33.15 34.35 0 52000])
     set(gcf, 'Color', 'w');
